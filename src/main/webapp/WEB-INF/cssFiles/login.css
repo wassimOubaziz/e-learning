@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Sniglet&display=swap");
+::-webkit-scrollbar{width:6px;border-left:1px solid gray; border-radius: 20px;}
+::-webkit-scrollbar-thumb{background-color:lightgray;}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Sniglet", cursive;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/backgroudImageSign.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(77, 77, 77, 0.2);
+}
+
+body .container .content {
+    background-color: white;
+    width: 350px;
+    height: 60vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+body .container .content .k {
+    width: 100%;
+    padding: 10px 0px;
+}
+
+body .container .content input {
+    display: block;
+    width: 100%;
+    font-size: 23px;
+    margin: 15px 0px;
+    padding-bottom: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #99008a;
+}
+
+body .container .content input::placeholder {
+    opacity: 0.2;
+}
+
+body .container .content input:focus {
+    border-bottom: 2px solid #008c99;
+}
+
+body .container h1 {
+    margin-bottom: 30px;
+}
+
+body .container button {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 5px 0px;
+    border: none;
+    background-color: #008c99;
+    color: white;
+    cursor: pointer;
+}
+
+body .container button a:hover {
+    color: #008c99;
+    background-color: white;
+    transition: 0.2s linear;
+    border: 1px solid #008c99;
+}
+
+.home {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #99008a;
+}
+
+.home a {
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+
+.messages .message {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    background-color: yellowgreen;
+    padding: 20px 0px;
+    text-align: center;
+    color: white;
+    display: none;
+}
+
+.messages .message.no {
+    background-color: rgba(255, 55, 0, 0.886);
+}
+
+.messages .message.active {
+    display: block;
+}

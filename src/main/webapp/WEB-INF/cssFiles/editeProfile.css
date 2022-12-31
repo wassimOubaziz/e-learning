@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Sniglet&display=swap");
+::-webkit-scrollbar{width:6px;border-left:1px solid gray; border-radius: 20px;}
+::-webkit-scrollbar-thumb{background-color:lightgray;}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Sniglet", cursive;
+}
+
+.adduser {
+    padding: 20px;
+    padding-top: 40px;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: white;
+    display: block;
+}
+
+.adduser .parts {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: #555555;
+}
+
+.adduser .part {
+    width: 220px;
+}
+
+.adduser button {
+    margin-top: 0px;
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+    background-color: #008c99;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.adduser button:hover {
+    color: #008c99;
+    background-color: white;
+    transition: 0.2s linear;
+    border-radius: 5px;
+    border: 1px solid #008c99;
+}
+
+.adduser input {
+    display: block;
+    width: 100%;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 15px 0px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #99008a;
+}
+
+.adduser input:focus {
+    border-bottom: 2px solid #008c99;
+}
+
+.adduser input::placeholder {
+    opacity: 0.3;
+}
+
+.adduser.active {
+    display: block;
+}
+
+
+.adduser .role, .adduser .module{
+    display:none;
+}
